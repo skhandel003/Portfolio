@@ -5,16 +5,16 @@ import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"),
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Portfolio.com",
+    template: "",
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
     title: "chronark.com",
-    description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
+    description: "Co-founder of unkey.dev and founder of planetfall.io",
+    url: "http://localhost:3000",
     siteName: "chronark.com",
     images: [
       {
@@ -66,8 +66,9 @@ export default function RootLayout({
         <Analytics />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
         {children}
       </body>
