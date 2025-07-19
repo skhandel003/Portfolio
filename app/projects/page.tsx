@@ -20,7 +20,7 @@ export default async function ProjectsPage() {
 
   const featured = projects.find((project) => project.slug === "riposte")!;
   const top2 = projects.find((project) => project.slug === "sarimax")!;
-  const top3 = projects.find((project) => project.slug === "bankist")!;
+  const top3 = projects.find((project) => project.slug === "Forest")!;
   const sorted = projects
     //.filter((p) => p.published)
     .filter(
@@ -80,7 +80,7 @@ export default async function ProjectsPage() {
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                    Try it
+                    Try this one out - Click
                   </p>
                 </div>
               </article>

@@ -34,7 +34,7 @@ export const projects: Project[] = [
   },
   {
     slug: "DBMS",
-    title: "Hospital Maneagement Sysytem",
+    title: "Hospital Management Sysytem",
     description:
       "FullStack management system tailored for small hospitals and clinics providing easy access to information about doctors, patients, insurance and equipment and the links between each by ward and specialization.",
     date: "2024-12-10",
@@ -45,6 +45,14 @@ export const projects: Project[] = [
     title: "Forkify",
     description: "A advanced static frontend website using HTML and sass.",
     date: "2024-09-10",
+    published: false,
+  },
+  {
+    slug: "Forest",
+    title: "Forest Fire Prediction",
+    description:
+      "A full stack web app in development for Google maps Hackathon. Using earth engine and weather api data in XGBoost - tree based machine learning model to predict fires",
+    date: "2025-07-31",
     published: false,
   },
 ];
